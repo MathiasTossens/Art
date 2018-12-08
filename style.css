@@ -2,6 +2,7 @@
 /* CSS Document */
 /* latin-ext */
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
 *,h{
 	margin: 0;
 	transition: all 0s;
@@ -20,7 +21,7 @@ h3{
 body{
 	margin: 0;
 	padding: 0px;
-	font-family:"roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family:"comfortaa", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	background-color: black;
 }
 ul{
@@ -94,7 +95,7 @@ img{
 		margin: 0 7% 0;
 	}
 	#welcome h1{
-		font-family: "Roboto";
+		font-family: "comfortaa";
 		font-style: light;
 		font-size: 100px;
 		padding-top: 12vh;
@@ -127,7 +128,7 @@ footer{
 }
 #portolios h1{
 	font-size: 5em;
-	padding: 0px 0px;
+	padding: 10px 0px 0px;
 	vertical-align: middle;
 }
 	.container-P1, .container-P2, .container-P3{
@@ -212,7 +213,7 @@ footer p{
 }
 
 
-@media(max-width:1000px){
+@media(max-width:1100px){
 	#branding{
 	}
 	.container-header{
@@ -222,12 +223,28 @@ footer p{
 		justify-content: space-between;
 		padding: 0% 2.5%;
 	}
+	#welcome h1{
+		font-size: 9vw;
+	}
+	#welcome h2{
+		padding-top: 1vh;
+		font-size: 6vw;
+		bottom: 6vh;
+		color: rgba(243,243,243,0.70);
+		text-shadow: 1px 1px 1px black;
+	}
+	#portolios h1{
+		font-size: 8vw;
+		padding: 10px 0px;
+		vertical-align: middle;
+	}
 }
+
 @media(max-width:790px){
 }
+
 @media(max-width:670px){
 }
+
 @media(max-width:480px){
-
 }
-

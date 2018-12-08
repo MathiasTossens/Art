@@ -15,4 +15,5 @@ ScrollReveal().reveal('#bigdown', {
     origin: 'top',
     distance: '100px',
 })
+
 $('#gallery').lightGallery();

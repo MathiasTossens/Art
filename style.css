@@ -6,6 +6,7 @@
 *,h{
 	margin: 0;
 	transition: all 0s;
+	scroll-behavior: smooth;
 }
 
 html.sr .lh{
@@ -46,12 +47,41 @@ img{
 		width: 100%;
 		overflow: hidden;
 	}
+		header a{
+			color: #000000;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			padding-left: 1em;
+		}
+		header a:hover{
+			color: rgb(31, 31, 31);
+			font-weight: 700;
+			transition: all .1s	;
+		}
+		.container-header img{
+			width: 5em;
+		}
+		#branding{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 1vh;
+		}
+		#branding img{
+			float: left;
+			max-height: 3vh;
+			object-fit: contain;
+		}
+		#branding h1{
+			padding-left:15px
+		}
 	.container-header{
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0% 2.5%;
+		padding: 2.5% 2.5%;
 	}
 	header{
 		background-color: rgb(255, 255, 255);
@@ -59,35 +89,11 @@ img{
 		width: 100%;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
 	}
+	nav ul{
+		text-align: right;
+	}
 	header nav li{
 		display: inline;
-	}
-	header a{
-		color: #000000;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 1.1em;
-		padding-left: 1em;
-	}
-	header a:hover{
-		color: rgb(31, 31, 31);
-		font-weight: 700;
-		transition: all .1s	;
-	}
-	.container-header img{
-		width: 5em;
-	}
-	#branding{
-		margin: 10px
-	}
-	#branding img{
-		float: left;
-		margin: 20px;
-		max-height: 70px;
-		object-fit: contain;
-	}
-	#branding h1{
-		padding-left:15px
 	}
 	#welcome{
 		text-overflow: ellipsis;
@@ -215,13 +221,15 @@ footer p{
 
 @media(max-width:1100px){
 	#branding{
+		justify-content: left;
 	}
 	.container-header{
 		display: flex;
 		flex-flow: row wrap;
-		align-items: center;
-		justify-content: space-between;
+		text-align:center;
+		justify-content: space-around;
 		padding: 0% 2.5%;
+		font-size: 2vw;
 	}
 	#welcome h1{
 		font-size: 9vw;

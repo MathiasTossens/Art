@@ -97,7 +97,7 @@ img{
 	#welcome h1{
 		font-family: "comfortaa";
 		font-style: light;
-		font-size: 100px;
+		font-size: 5vw;
 		padding-top: 12vh;
 		color: hsla(0,0%,100%,0.97);
 	}
@@ -123,11 +123,11 @@ footer{
 	color: white;
 }
 .titlecontainer{
-	padding-left: 10%;
+	padding-left: 5%;
 	background-color: white;
 }
 #portolios h1{
-	font-size: 5em;
+	font-size: 3em;
 	padding: 10px 0px 0px;
 	vertical-align: middle;
 }
@@ -143,7 +143,7 @@ footer{
 		background-attachment:fixed;
 		background-position: center;
 		transition: all 1s;
-		border-bottom: 25px solid hsla(0,0%,86%,1.00);
+		border-bottom: 25px solid white;
 	}
 	.container-P1{
 		background-image: url(images/lite/Th-hole-final.jpg);
@@ -158,7 +158,7 @@ footer{
 	.container-P3{
 		background: url(images/lite/hiw-filmic-analog.jpg);
 		background-attachment: fixed;
-		background-position: center;
+		background-size: cover;
 	}	
 	.container-P1 p, .container-P2 p, .container-P3 p{
 		text-align: center;
@@ -233,17 +233,44 @@ footer p{
 		color: rgba(243,243,243,0.70);
 		text-shadow: 1px 1px 1px black;
 	}
+
+
+}
+
+
+@media(max-width:790px){
+	.container-P1 button, .container-P2 button, .container-P3 button{
+		font-size: 4vw;
+	}
+	.container-P1 p, .container-P2 p, .container-P3 p{
+		font-size: 3vw;
+	}	
+	#portolios h1{
+		font-size: 6vw;
+		padding: 10px 0px;
+		vertical-align: middle;
+	}
+	.container-P1, .container-P2, .container-P3{
+		background-attachment: scroll;
+	}
+	.container-P3{
+		background-position: right;
+		background: contain;
+	}
+}
+
+@media(max-width:670px){
+	.container-P1 button, .container-P2 button, .container-P3 button{
+		font-size: 6vw;
+	}
+	.container-P1 p, .container-P2 p, .container-P3 p{
+		font-size: 4vw;
+	}	
 	#portolios h1{
 		font-size: 8vw;
 		padding: 10px 0px;
 		vertical-align: middle;
 	}
-}
-
-@media(max-width:790px){
-}
-
-@media(max-width:670px){
 }
 
 @media(max-width:480px){

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.gallerywhite{
+	background-color: white;
+}
+#gallery{
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 95%;
+	padding-top: 20px; 
+}
+.vignette img{
+	object-fit: cover;
+}
+.vignette{
+	width: 30vw;
+	min-width: 200px;
+	margin: 5px;
+}
+html.sr .vignette{
+    visibility: hidden;
+}
+.vignette img:hover{
+	transition: .2s;
+	opacity: .9;
+	transform: scale(.95)
+}
+
+@media(max-width:1269px){ 
+}
+@media(max-width:650px){
+}
+@media(max-width:370px){	
+}

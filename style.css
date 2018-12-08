@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+/* latin-ext */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+*,h{
+	margin: 0;
+	transition: all 0s;
+}
+
+html.sr .lh{
+    visibility: hidden;
+}
+h2{
+	color: rgba(243,243,243,0.70);
+	font-size: 4vw; 
+}
+h3{
+	font-size: 1vw;
+}
+body{
+	margin: 0;
+	padding: 0px;
+	font-family:"roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: black;
+}
+ul{
+	list-style-type: none;
+	padding:0; 
+}
+#portable nav{
+	display: hidden;
+}
+.show{
+	opacity: 1;
+}
+img{
+	max-width: 100%;
+}
+/*landing*/
+	#landing{
+	}
+	.landingbg{
+		background: rgb(20, 20, 20);
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+	}
+	.container-header{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0% 2.5%;
+	}
+	header{
+		background-color: rgb(255, 255, 255);
+		position: sticky;
+		width: 100%;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+	}
+	header nav li{
+		display: inline;
+	}
+	header a{
+		color: #000000;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		padding-left: 1em;
+	}
+	header a:hover{
+		color: rgb(31, 31, 31);
+		font-weight: 700;
+		transition: all .1s	;
+	}
+	.container-header img{
+		width: 5em;
+	}
+	#branding{
+		margin: 10px
+	}
+	#branding img{
+		float: left;
+		margin: 20px;
+		max-height: 70px;
+		object-fit: contain;
+	}
+	#branding h1{
+		padding-left:15px
+	}
+	#welcome{
+		text-overflow: ellipsis;
+		text-align: left;
+		margin: 0 7% 0;
+	}
+	#welcome h1{
+		font-family: "Roboto";
+		font-style: light;
+		font-size: 100px;
+		padding-top: 12vh;
+		color: hsla(0,0%,100%,0.97);
+	}
+	#welcome h2{
+		padding-top: 1vh;
+		font-size: 4rem;
+		bottom: 6vh;
+		color: rgba(243,243,243,0.70);
+		text-shadow: 1px 1px 1px black;
+	}
+	.arrow{
+		width: 30px;
+		position: absolute;
+		top: 92vh;
+		padding-left: 50%;
+	}
+footer{
+	background-color: white
+}	
+
+/*portfolio*/
+#portfolios{
+	color: white;
+}
+.titlecontainer{
+	padding-left: 10%;
+	background-color: white;
+}
+#portolios h1{
+	font-size: 5em;
+	padding: 0px 0px;
+	vertical-align: middle;
+}
+	.container-P1, .container-P2, .container-P3{
+		float: left;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		height: 60vh;
+		background-size: cover;
+		background-attachment:fixed;
+		background-position: center;
+		transition: all 1s;
+		border-bottom: 25px solid hsla(0,0%,86%,1.00);
+	}
+	.container-P1{
+		background-image: url(images/lite/Th-hole-final.jpg);
+		background-attachment: fixed;
+		box-shadow: 5px 5px 5px black;
+	}
+	.container-P2{
+		background-image: url(images/lite/dsc_6810.jpg);
+		background-attachment: scroll;
+		box-shadow: none;
+	}
+	.container-P3{
+		background: url(images/lite/hiw-filmic-analog.jpg);
+		background-attachment: fixed;
+		background-position: center;
+	}	
+	.container-P1 p, .container-P2 p, .container-P3 p{
+		text-align: center;
+		font-size: 2vw;
+		font-style: italic;
+		color: rgb(224, 224, 224);
+		text-shadow: 1px 1px 2px black;
+	}
+	.container-P1 button, .container-P2 button, .container-P3 button{
+		border: none;
+		font-size: 3em;
+		padding: 9px 20px 7px;
+		margin-bottom: 2vh;
+		background-color: rgba(32, 32, 32, 0.815);
+		color: rgba(255,255,255,1.00);
+		border-radius: 3px;
+		white-space: normal;
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(32, 32, 32)
+	}
+	.container-P1 button:hover, .container-P2 button:hover, .container-P3 button:hover{
+		transition: .3s;
+		background-color:  rgb(32, 32, 32);
+		color: rgb(255, 255, 255);
+		box-shadow: 2px 2px 2px black;
+		border: 0px;
+		border-style: solid;
+		border-color: #000000;
+		border-radius: 30px;
+	}
+footer{
+	text-align: center;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;	
+}
+.container-sc{
+	margin: 20px;
+	width: 30%;
+	margin-right: 20px;
+	min-width: 300px;
+	max-width: 100%;
+}
+footer p{
+	margin: 20px;
+	font-size: 1.1em;
+	text-align: center;
+	
+}
+
+
+@media(max-width:1000px){
+	#branding{
+	}
+	.container-header{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0% 2.5%;
+	}
+}
+@media(max-width:790px){
+}
+@media(max-width:670px){
+}
+@media(max-width:480px){
+
+}
+

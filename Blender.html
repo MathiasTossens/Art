@@ -4,17 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="ZU-WybLX2QyaC3Ulpcd8L1eMF62aGoTb3bnFGaRGk2I" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style-portfolio.css">
 	<link rel="stylesheet" href="css/lightgallery.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<script src="//code.jquery.com/jquery-latest.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="//code.jquery.com/jquery-latest.js"></script>
 	<script src="java.js"></script>
 	<script src="js/lightgallery.min.js"></script>
-    <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="js/lg-thumbnail.min.js"></script>
+	<script src="js/lg-fullscreen.min.js"></script>
 	<meta name="description" content="Mathi-art portfolio." />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
@@ -22,11 +22,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="images/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
 	<title>Mathi-art</title>
 </head>
 
-<body class="gallerywhite">
+<body class="gallerywhite"  id="main">
 	<header>
 		<div class="container-header">
 			<a href="index.html">
@@ -35,7 +34,7 @@
 					<li><h1>Mathias Tossens</h1></li>
 				</ul>
 			</a>
-			<nav>
+			<nav class="toplinks">
 				<ul>
 					<li> <a href="index.html">home</a></li>
 					<li> <a href="photoshop.html">photoshop</a></li>
@@ -43,9 +42,27 @@
 					<li> <a href="blender.html">blender</a></li>
 				</ul>
 			</nav>
+			<nav class="navbar">
+					<span class="openslide" id="navbut" >
+						<a href="#"onclick="opensidemenu()">
+							<svg width="30" height="30">
+								<path d="M0,5 30,5" stroke="#000" stroke-width="3" />
+								<path d="M0,14 30,14" stroke="#000" stroke-width="3" />
+								<path d="M0,23 30,23" stroke="#000" stroke-width="3" />
+							</svg>
+						</a>
+					</span>
+				</nav>
+				<div id="sidemenu" class="sidenav">
+					<a href="#" class="btn-close" onclick="closesidemenu()">&times;</a>
+					<a href="index.html">home</a>
+					<a href="photoshop.html">photoshop</a>
+					<a href="photographs.html">photographs</a>
+					<a href="blender.html">blender</a>
+				</div>
 		</div>
 	</header>
-	<section>
+	<section class="blur">
 		<div id="gallery">
 			<a class="vignette" href="images/hiw-filmic-analog.jpg">
 				<img src="images/lite/hiw-filmic-analog-Light-2.jpg" alt="img">

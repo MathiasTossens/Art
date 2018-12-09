@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 .gallerywhite{
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 #gallery{
 	margin: auto;
@@ -10,10 +10,11 @@
 	align-items: center;
 	justify-content: space-around;
 	width: 95%;
-	padding-top: 20px; 
+	padding-top: 70px; 
 }
 .vignette img{
 	object-fit: cover;
+	width: 100%;
 }
 .vignette{
 	width: 30vw;
@@ -24,14 +25,25 @@ html.sr .vignette{
     visibility: hidden;
 }
 .vignette img:hover{
-	transition: .2s;
-	opacity: .9;
-	transform: scale(.95)
+	transition: 0.2s;
+	transform: scale(.95);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+	
 }
 
-@media(max-width:1269px){ 
+@media(max-width:1069px){ 
+	.vignette{
+		width: 45vw;
+		min-width: 10px;
+		margin: 5px;
+	}
 }
-@media(max-width:650px){
+@media(max-width:750px){
+	.vignette{
+		width: 85vw;
+		min-width: 10px;
+		margin: 5px;
+	}
 }
 @media(max-width:370px){	
 }

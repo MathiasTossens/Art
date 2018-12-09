@@ -15,5 +15,16 @@ ScrollReveal().reveal('#bigdown', {
     origin: 'top',
     distance: '100px',
 })
-
 $('#gallery').lightGallery();
+
+function opensidemenu(){
+    document.getElementById('sidemenu').style.width= '50vw';
+    document.getElementById('main').style.marginLeft= '50vw';
+}
+function closesidemenu(){
+    document.getElementById('sidemenu').style.width= '0';
+    document.getElementById('main').style.marginLeft= '0vw';
+}
+
+var pContainerHeight = $('.landingbg').height();
+

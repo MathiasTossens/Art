@@ -18,8 +18,8 @@ ScrollReveal().reveal('#bigdown', {
 $('#gallery').lightGallery();
 
 function opensidemenu(){
-    document.getElementById('sidemenu').style.width= '50vw';
-    document.getElementById('main').style.marginLeft= '50vw';
+    document.getElementById('sidemenu').style.width= '100vw';
+    document.getElementById('main').style.marginLeft= '100vw';
 }
 function closesidemenu(){
     document.getElementById('sidemenu').style.width= '0';

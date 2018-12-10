@@ -3,7 +3,7 @@ ScrollReveal().reveal('.vignette', {
     rotate: {
         x: 0,
         z: 5
-        } 
+    }
 })
 ScrollReveal().reveal('.slideinleft', {
     delay: 200,
@@ -15,13 +15,11 @@ ScrollReveal().reveal('#bigdown', {
     origin: 'top',
     distance: '100px',
 })
-function opensidemenu(){
-    document.getElementById('sidemenu').style.width= '100vw';
-    document.getElementById('main').style.marginLeft= '100vw';}
-function closesidemenu(){
-   document.getElementById('sidemenu').style.width= '0';
-   document.getElementById('main').style.marginLeft= '0vw';
+function opensidemenu() {
+    document.getElementById('sidemenu').style.width = '100vw';
+    document.getElementById('main').style.marginLeft = '100vw';
 }
-
-var pContainerHeight = $('.landingbg').height();
-
+function closesidemenu() {
+    document.getElementById('sidemenu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0vw';
+}

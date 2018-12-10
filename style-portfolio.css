@@ -15,17 +15,20 @@
 .vignette img{
 	object-fit: cover;
 	width: 100%;
+	display: block;
+	position: relative;
+	transition: 0.2s;
 }
 .vignette{
 	width: 30vw;
 	min-width: 200px;
-	margin: 5px;
+	margin: 0;
+	overflow: hidden;	
 }
 html.sr .vignette{
     visibility: hidden;
 }
 .vignette img:hover{
-	transition: 0.2s;
 	transform: scale(.95);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
 	

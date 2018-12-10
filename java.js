@@ -15,7 +15,6 @@ ScrollReveal().reveal('#bigdown', {
     origin: 'top',
     distance: '100px',
 })
-$('#gallery').lightGallery();
 function opensidemenu(){
     document.getElementById('sidemenu').style.width= '100vw';
     document.getElementById('main').style.marginLeft= '100vw';}

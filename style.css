@@ -7,7 +7,7 @@
 	margin: 0;
 }
 html{
-	scroll-behavior: smooth;
+	scroll-behavior: auto;
 	overflow-y: scroll;
 	overflow-x: hidden;
 
@@ -110,21 +110,22 @@ ul{
 	border-radius:  0  0  0 20px;
   }
   .sidenav{
-	height:100vh;
+	height:100%;
 	width: 0;
 	position:fixed;
 	z-index:auto;
 	display: flex;
 	flex-flow: column;
-	justify-content: space-around ;
+	justify-content: flex-start ;
 	top:0;
 	left:0;
 	background-color:rgb(19, 19, 19);
 	opacity:1;
-	overflow:hidden;
-	padding:0;
+	overflow: none;
+	padding:10vh 0 0 0;
 	transition:0.5s;
 	text-align: left;
+	scroll-behavior: auto;
   }
   .toggled{
 	width: 100%;
@@ -188,8 +189,9 @@ ul{
 		color: hsla(0,0%,100%,0.97);
 	}
 	#welcome h2{
-		padding-top: 1vh;
+		padding-top: 3vh;
 		font-size: 4rem;
+		line-height: 2vh;
 		bottom: 6vh;
 		color: rgba(243,243,243,0.70);
 		text-shadow: 1px 1px 1px black;
@@ -206,11 +208,11 @@ footer{
 
 /*portfolio*/
 #portfolios{
-	color: white;
+	color: #ffffff;
 }
 .titlecontainer{
 	padding-left: 5%;
-	background-color: white;
+	background-color: rgb(98, 98, 255);
 }
 #portolios h1{
 	font-size: 3em;

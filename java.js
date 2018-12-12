@@ -9,7 +9,7 @@ $(document).ready(function (){
         triggerHook: 0.8,
     })
     .setClassToggle(this, 'leftin')
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
     
     });
@@ -21,7 +21,7 @@ $(document).ready(function (){
         reverse: true
     })
     .setClassToggle(this, 'vignetteIn')
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
     
     });
@@ -31,7 +31,7 @@ $(document).ready(function (){
         triggerHook: 0,
     })
     .setClassToggle('div.container-header', 'flydown')
-    .addIndicators({
+    // .addIndicators({
         indent:'50'
     })
     .addTo(controller);

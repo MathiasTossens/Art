@@ -20,13 +20,17 @@
 	transition: 0.2s;
 }
 .vignette{
+	opacity: 0;
 	width: 30vw;
 	min-width: 200px;
 	margin: 0;
 	overflow: hidden;	
+	transition: all .5s;
+	transform: translatey(20px)
 }
-html.sr .vignette{
-    visibility: hidden;
+.vignetteIn{
+	transform:none;
+	opacity: 1;
 }
 .vignette img:hover{
 	transform: scale(.95);

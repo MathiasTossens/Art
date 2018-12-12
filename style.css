@@ -15,6 +15,9 @@ html{
 html.sr .lh{
     visibility: hidden;
 }
+.hidden{
+	opacity: 0;
+}
 h2{
 	color: rgba(243,243,243,0.70);
 	font-size: 4vw; 
@@ -45,6 +48,17 @@ ul{
 	opacity: 1;
 }
 /*navbar*/
+	.Ontop{
+		position: absolute;
+		top: -70px;
+		z-index: 100;
+		opacity: 0;
+		transition: all .5s;
+	}
+	.flydown{
+		opacity: 1;
+		top:0
+	}
 	.container-header{
 		background-color: rgb(255, 255, 255);
 		overflow: hidden;
@@ -113,7 +127,7 @@ ul{
 	height:100%;
 	width: 0;
 	position:fixed;
-	z-index:auto;
+	z-index:1000;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start ;
@@ -123,7 +137,7 @@ ul{
 	opacity:1;
 	overflow: none;
 	padding:10vh 0 0 0;
-	transition:0.5s;
+	transition:0.1s;
 	text-align: left;
 	scroll-behavior: auto;
   }
@@ -206,13 +220,27 @@ footer{
 	background-color: white
 }	
 
+.hidden{
+	visibility: hidden;
+}
+.left{
+	opacity: 0;
+	transform: translatex(-500px);
+	transition: ease-in-out all .5s
+}
+.leftin{
+	opacity: 1;
+	transform: translateX(0)
+}
 /*portfolio*/
-#portfolios{
-	color: #ffffff;
+#portolios{
 }
 .titlecontainer{
-	padding-left: 5%;
+	padding: 0.5vh 5% ;
 	background-color: rgb(223, 223, 223);
+}
+.reveal{
+	visibility: visible;
 }
 #portolios h1{
 	font-size: 3em;
@@ -234,7 +262,7 @@ footer{
 		border-bottom: 25px solid white;
 	}
 	.container-P1{
-		background-image: url(images/lite/Th-hole-final.jpg);
+		background-image: url(images/lite/Th-hole-final-Light.jpg);
 		background-attachment: fixed;
 		box-shadow: 5px 5px 5px black;
 	}

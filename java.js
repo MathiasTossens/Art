@@ -32,8 +32,8 @@ $(document).ready(function (){
     })
     .setClassToggle('div.container-header', 'flydown')
     // .addIndicators({
-        indent:'50'
-    })
+     //   indent:'50'
+   // })
     .addTo(controller);
 
 // ScrollReveal().reveal('.vignette', {

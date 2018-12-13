@@ -55,7 +55,11 @@ $(document).ready(function (){
 // })
 
 
-
+$('.collumn').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+  });
 });
   
 function opensidemenu() {

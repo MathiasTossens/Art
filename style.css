@@ -33,13 +33,6 @@ body{
 	font-family:"comfortaa", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	background-color: black;
 }
-body   
-	{
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 10px;
-	}
 ul{
 	list-style-type: none;
 	padding:0; 
@@ -64,7 +57,7 @@ ul{
 		overflow: hidden;
 		height: 65px;
 		width: 100%;
-		border-bottom: 1px solid rgb(58, 58, 58);
+		border-bottom: 1px solid rgb(192, 192, 192);
 		position: fixed;
 		z-index: 10;
 		display: flex;
@@ -168,10 +161,9 @@ ul{
   
   .sidenav .btn-close{
 	position:absolute;
-	top:0;
-	right:22px;
+	top:1vh;
+	right:10vw;
 	font-size:36px;
-	margin-left:50px;
   }
   
   #main{
@@ -196,7 +188,6 @@ ul{
 		margin: 0 7% 0;
 	}
 	#welcome h1{
-		font-family: "comfortaa";
 		font-style: light;
 		font-size: 5vw;
 		padding-top: 12vh;
@@ -214,7 +205,7 @@ ul{
 		position: absolute;
 		top: 92vh;
 		padding-left: 50%;
-		margin-left: -30px;
+		margin-left: -15px;
 	}
 footer{
 	background-color: white
@@ -343,8 +334,6 @@ footer p{
 		color: rgba(243,243,243,0.70);
 		text-shadow: 1px 1px 1px black;
 	}
-
-
 }
 
 

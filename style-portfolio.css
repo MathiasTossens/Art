@@ -1,56 +1,51 @@
 @charset "utf-8";
 /* CSS Document */
 .gallerywhite{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(226, 226, 226);
 }
 #gallery{
-	margin: auto;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-around;
-	width: 95%;
-	padding-top: 70px; 
+	display: inline-block;
+	width: 80%;
+	padding-top: 100px; 
+	position: absolute;
+	left: 10%;	
 }
-.vignette img{
-	object-fit: cover;
-	width: 100%;
-	display: block;
-	position: relative;
-	transition: 0.2s;
+.collumn{
+	column-count: 3;
+	column-gap: 20px; 
+	transition: all .1s; 
 }
 .vignette{
+	transition: 0.2s;
+	width: 100%;
 	opacity: 0;
-	width: 30vw;
-	min-width: 200px;
-	margin: 0;
-	overflow: hidden;	
+	margin: 1vh 0;
 	transition: all .5s;
-	transform: translatey(20px)
+	transform: translatey(20px);
+	object-fit: cover;
 }
 .vignetteIn{
 	transform:none;
 	opacity: 1;
 }
-.vignette img:hover{
-	transform: scale(.95);
+.vignette:hover{
+	transform: scale(.97);
+	opacity: .95;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
 	
 }
 
 @media(max-width:1069px){ 
-	.vignette{
-		width: 45vw;
-		min-width: 10px;
-		margin: 5px;
+	.collumn{
+		column-count: 2;
+		column-gap: 20px; 
 	}
 }
 @media(max-width:750px){
-	.vignette{
-		width: 85vw;
-		min-width: 10px;
-		margin: 5px;
+	.collumn{
+		column-count: 1;
+		column-gap: 20px; 
 	}
-}
+	}
 @media(max-width:370px){	
 }

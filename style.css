@@ -242,7 +242,7 @@ footer{
 		height: 700px;
 	}
 	.space{
-		height: 100px;
+		height: 50px;
 		background-color: white
 	}
 	button a{
@@ -312,11 +312,12 @@ footer{
 	.container h3{
 		font-size: 3em;
 		color: white;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
 	}
 	.container p{
 		font-size: 1.5em;
 		color: white;
+	}
+	.container h3, .container p{
 		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
 	}
 	.P1::after{
@@ -328,15 +329,28 @@ footer{
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
+		opacity: 1;
+	}
+	.P1::before{
+		content: "";
+		position: absolute;
+		z-index: 0;
+		top: 0; bottom: 0; left: 0; right: 0;
+		background: linear-gradient(0deg, #d53369 0%, #daae51 100%);		background-attachment: fixed;
 		opacity: .8;
 	}
 	.P2{
 		background-image: url(images/lite/dsc_6810.jpg);
 		background-position: center;
 	}
-	.P3{
+	.P3::after{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0; bottom: 0; left: 0; right: 0;
 		background: url(images/lite/HIW\ filmic-Analog.webp) fixed right;
 		background-size: cover;
+		opacity: .8;
 	}	
 footer{
 	text-align: center;
@@ -370,8 +384,8 @@ footer p{
 		font-size: 6vw;
 		bottom: 6vh;
 		color: rgba(243,243,243,0.70);
-		text-shadow: 1px 1px 1px black;
 	}
+
 }
 
 
@@ -383,15 +397,21 @@ footer p{
 
 	.toplinks{
 		display: none;
+	}	
+	.P1::after, .P2, .P3::after{
+		background-attachment: scroll;
+	}
+	.wrapPortfolio{
+		height: 500px;
 	}
 }
 
 @media(max-width:670px){
-	.container-P1 button, .container-P2 button, .container-P3 button{
-		font-size: 6vw;
+	.container h3{
+		font-size: 2em;
 	}
-	.container-P1 p, .container-P2 p, .container-P3 p{
-		font-size: 4vw;
+	.container p{
+		font-size: 1em;
 	}	
 	#portolios h1{
 		font-size: 8vw;

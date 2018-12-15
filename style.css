@@ -262,40 +262,16 @@ footer{
 		border: 2px solid rgb(255, 255, 255);
 		border-radius: 50px;
 		background-color: rgba(255, 255, 255, 0);
-		transition: all .3s;
+		transition: all .15s;
+		opacity: .8;
 	}
 	.buttonP:hover{
-		border:3px solid white;
-		background-color: rgba(15, 15, 15, 0.192)
+		border:2px solid white;
+		background-color: rgba(15, 15, 15, 0.192);
+		opacity: 1;
 	}
 	.buttonP:hover a{
 		color: white;
-	}
-	.sidelink{
-		display: flex;
-		flex-flow: column;
-		position: relative;
-		justify-content: center;
-		left: 0;
-		top:0;
-		margin: 0 -30% 0 0;
-		width:30%;
-		height:100%;
-		background-color: rgb(37, 37, 37);
-		box-shadow: inset 0 0 10px;
-		transition: all .5s;
-		z-index: -2;
-	}
-	.sidelink-after{
-		margin: 0 0% 0 0;
-	}
-	.sidelink a{
-		z-index: -1;
-		color: rgb(255, 255, 255);
-		text-decoration: none;
-		text-align: center;
-		font-size: 4vw;
-		font-style: italic;
 	}
 	.container{
 		position: relative;

@@ -3,12 +3,25 @@ $(document).ready(function (){
     var controller = new ScrollMagic.Controller();
     
   
-    $('.fadeinleft').each(function(){
+    $('.trigger01').each(function(){
         var ourScene = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0.8,
+        triggerHook: 0.95,
     })
-    .setClassToggle(this, 'leftin')
+    .setClassToggle(this, 'backin')
+    // .addIndicators()
+    .addTo(controller);
+    
+    });
+
+    $('.sidelink').each(function(){
+        var ourScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.5,
+        reverse: true,
+        duration: '500px'
+    })
+    .setClassToggle(this, 'sidelink-after')
     // .addIndicators()
     .addTo(controller);
     

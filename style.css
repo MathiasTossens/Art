@@ -171,8 +171,6 @@ ul{
 	width:100%;
 	}
 /*landing*/
-	#landing{
-	}
 	.landingbg{
 		background: rgb(20, 20, 20);
 		height: 100vh;
@@ -364,9 +362,6 @@ footer p{
 
 
 @media(max-width:1100px){
-
-	.container-header{
-	}
 	#welcome h1{
 		font-size: 9vw;
 	}

@@ -43,9 +43,9 @@ $(document).ready(function (){
     triggerHook: 0,
     })
     .setClassToggle('div.container-header', 'flydown')
-     .addIndicators({
-    indent:'50'
-    })
+    //  .addIndicators({
+    // indent:'50'
+    // })
     .addTo(controller);
 
 // ScrollReveal().reveal('.vignette', {

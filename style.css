@@ -3,6 +3,9 @@
 /* latin-ext */
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
+:root{
+	font-size: 1vw;
+}
 *,h{
 	margin: 0;
 }
@@ -53,18 +56,19 @@ ul{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 6vw;
+		box-sizing: border-box;
 	}
 	.container-header a{
 		font-style: normal;
 		color: #000000;
 		text-decoration: none;
-		font-size: 1em
+		font-size: 1.3rem
 	}
 	#branding{
 		display:flex;
 		align-items: center;
 		flex: 1;
-		padding-left: 3vw;
 	}
 	#branding img{
 		height: 50px;
@@ -83,18 +87,17 @@ ul{
 	color:#f2f2f2;
 	text-align:center;
 	padding:14px 16px;
+	
 	}
-
 	.toplinks ul{
 	display: flex;
 	justify-content: space-between;
 	margin:0;
-	font-size: 1.2em;
 	list-style:none;
-	padding-right: 3vw;
 	}
 	.toplinks li{
-	padding-left: 2vw
+	padding-left: 2vw;
+	font-weight: 400
 	}
 	.toplinks li:hover{
 	font-weight: bolder;
@@ -102,7 +105,6 @@ ul{
 	.navbar a:hover{
 	background-color:#ddd;
 	color:#000;
-	transition: 1s;
 	border-radius:  0  0  0 20px;
 	}
 	.sidenav{
@@ -129,7 +131,7 @@ ul{
 	.sidenav a{
 	margin:1vh 10px 1vh 5vh;
 	text-decoration:none;
-	font-size:2em;
+	font-size:3rem;
 	color:#ccc;
 	display:block;
 	transition:0.3s;
@@ -174,13 +176,13 @@ ul{
 	}
 	#welcome h1{
 		font-style: light;
-		font-size: 5vw;
+		font-size: 5rem;
 		padding-top: 12vh;
 		color: hsla(0,0%,100%,0.97);
 	}
 	#welcome h2{
 		padding-top: 3vh;
-		font-size: 4rem;
+		font-size: 3rem;
 		bottom: 6vh;
 		color: rgba(243,243,243,0.70);
 		text-shadow: 1px 1px 1px black;
@@ -240,7 +242,7 @@ footer{
 		font-family: "comfortaa", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		color: rgb(255, 255, 255);
 		text-decoration: none;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		padding: .2em .5em ;
 		transition: all .2s;
 	}
@@ -278,11 +280,11 @@ footer{
 		transition: all 1s;
 	}
 	.container h3{
-		font-size: 3em;
+		font-size: 3rem;
 		color: white;
 	}
 	.container p{
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		color: white;
 	}
 	.container h3, .container p{
@@ -311,7 +313,10 @@ footer{
 		background: url(images/lite/HIW\ filmic-Analog.webp) fixed right;
 		background-size: cover;
 		opacity: .8;
-	}	
+	}
+	.P1::after,	.P3::after{
+		box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.39);
+	}
 footer{
 	text-align: center;
 	display: inline-flex;
@@ -319,6 +324,7 @@ footer{
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;	
+	overflow: hidden;
 }
 .container-sc{
 	margin: 20px;
@@ -336,23 +342,16 @@ footer p{
 
 
 @media(max-width:1100px){
-	#welcome h1{
-		font-size: 9vw;
-	}
-	#welcome h2{
-		padding-top: 1vh;
-		font-size: 6vw;
-		bottom: 6vh;
-		color: rgba(243,243,243,0.70);
-	}
-	.navbar{
-		display: initial;
+	:root{
+		font-size: 1.7	vw;
 	}
 }
 
 
 @media(max-width:890px){
-
+	:root{
+		font-size: 2vw;
+	}
 	.toplinks{
 		display: none;
 	}	
@@ -362,25 +361,23 @@ footer p{
 	.wrapPortfolio{
 		height: 500px;
 	}
+	.navbar{
+		display: initial;
+	}
 }
 
 @media(max-width:670px){
-	.container h3{
-		font-size: 2em;
+	:root{
+		font-size: 2.2vw;
 	}
-	.container p{
-		font-size: 1em;
-	}	
 	#portolios h1{
-		font-size: 8vw;
-		padding: 10px 0px;
 		vertical-align: middle;
 	}
 
 
 @media(max-width:480px){
-	.container-header a{
-		font-size: 3.5vw
+	:root{
+		font-size: 2.5vw;
 	}
 	.sidenav{
 		text-align: center;
@@ -391,7 +388,6 @@ footer p{
 		padding:0;
 		margin: 0;
 		text-decoration:none;
-		font-size:2em;
 		color:#ccc;
 		display:block;
 		transition:0.3s;

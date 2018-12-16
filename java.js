@@ -8,7 +8,7 @@ $(document).ready(function (){
         triggerHook: 0.95,
     })
     .setClassToggle(this, 'backin')
-    // .addIndicators()
+    //  .addIndicators()
     .addTo(controller);
     
     });
@@ -43,9 +43,9 @@ $(document).ready(function (){
     triggerHook: 0,
     })
     .setClassToggle('div.container-header', 'flydown')
-    // .addIndicators({
-     //   indent:'50'
-   // })
+     .addIndicators({
+    indent:'50'
+    })
     .addTo(controller);
 
 // ScrollReveal().reveal('.vignette', {
@@ -75,8 +75,8 @@ $('.collumn').masonry({
 });
   
 function opensidemenu() {
-    document.getElementById('sidemenu').style.width = '100vw';
-    document.getElementById('main').style.marginLeft = '100vw';
+    document.getElementById('sidemenu').style.width = '100%';
+    document.getElementById('main').style.marginLeft = '100%';
 }
 function closesidemenu() {
     document.getElementById('sidemenu').style.width = '0';

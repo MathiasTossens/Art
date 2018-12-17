@@ -3,6 +3,8 @@
 /* latin-ext */
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Carme|Krona+One|Righteous|Rubik|Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
 :root{
 	font-size: 1vw;
 }
@@ -69,6 +71,7 @@ ul{
 		display:flex;
 		align-items: center;
 		flex: 1;
+		font-size: 20px;
 	}
 	#branding img{
 		height: 50px;
@@ -97,15 +100,14 @@ ul{
 	}
 	.toplinks li{
 	padding-left: 2vw;
-	font-weight: 400
 	}
-	.toplinks li:hover{
+	.toplinks li a{
+	font-weight: 400;
+	font-size: 20px;
+	transition: all .1s;
+	}
+	.toplinks li a:hover{
 	font-weight: bolder;
-	}
-	.navbar a:hover{
-	background-color:#ddd;
-	color:#000;
-	border-radius:  0  0  0 20px;
 	}
 	.sidenav{
 	height:100vh;
@@ -123,7 +125,10 @@ ul{
 	padding:10vh 0 0 0;
 	transition:0.1s;
 	text-align: left;
-	scroll-behavior: auto;
+	box-sizing: border-box;
+	}
+	#header-title{
+		font-size: 30px;	
 	}
 	.toggled{
 	width: 100%;
@@ -159,36 +164,46 @@ ul{
 	transition:margin-left 0.5s;
 	padding:0px;
 	overflow:hidden;
-	width:100%;
 	}
-/*landing*/
-	.landingbg{
-		background: rgb(20, 20, 20);
+
+/*landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing */
+/*landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing landing */
+
+.landingbg{
+		background-color: #537895;
+		background-image: linear-gradient(0deg, #20272c 0%, #111111 100%);
+		background-attachment: fixed;
 		height: 100vh;
 		width: 100%;
 		overflow: hidden;
 	}
 
 	#welcome{
-		text-overflow: ellipsis;
-		text-align: left;
-		margin: 0 7% 0;
+		margin: 7% 7% 0 ;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between
 	}
 	#welcome h1{
-		font-style: light;
+		font-family: 'comfortaa', 'sans-serif' ;
+		font-weight: bold;
 		font-size: 5rem;
-		padding-top: 12vh;
-		color: hsla(0,0%,100%,0.97);
+		color: rgb(230, 230, 230);
+		text-align: left;
+		text-shadow: 5px 5px 30px rgba(0, 0, 0, 0);
 	}
 	#welcome h2{
-		padding-top: 3vh;
+		font-family: 'comfortaa', 'sans-serif' ;
+		padding-top: 4vh;
 		font-size: 3rem;
+		line-height: 4rem;
+		text-align: left;
 		bottom: 6vh;
-		color: rgba(243,243,243,0.70);
-		text-shadow: 1px 1px 1px black;
+		color: rgb(201, 201, 201);
+		text-shadow:  5px 5px 15px rgba(0, 0, 0, 0);
 	}
 	.arrow{
-		width: 30px;
+		width: 50px;
 		position: absolute;
 		top: 92vh;
 		padding-left: 50%;
@@ -201,6 +216,11 @@ footer{
 .hidden{
 	visibility: hidden;
 }
+.slowfade{
+	opacity: 0;
+	transform: scale(1.1);
+	transition: all ease-in-out .8s;
+}
 .left{
 	opacity: 0;
 	transform: translatex(-500px);
@@ -210,6 +230,11 @@ footer{
 	opacity: 0;
 	transform: translatex(500px);
 	transition: ease-in-out all .5s
+}
+.up{
+	opacity: 0;
+	transform: translateY(-50px);
+	transition: ease-in-out all .5s 1.3s;
 }
 .backin{
 	opacity: 1;
@@ -343,7 +368,20 @@ footer p{
 
 @media(max-width:1100px){
 	:root{
-		font-size: 1.7	vw;
+		font-size: 1.7vw;
+	}
+	#welcome{
+		padding: 15% 10%;
+		margin: 0;
+	}
+	#welcome h1{
+	font-size: 6rem;
+	text-align: center;
+	}
+	#welcome h2{
+	padding-top: 5vh;
+	line-height: 7rem;
+	text-align: center;
 	}
 }
 
@@ -373,12 +411,16 @@ footer p{
 	#portolios h1{
 		vertical-align: middle;
 	}
+	#welcome h1{
+		font-size: 5rem;
+	}
 
 
 @media(max-width:480px){
 	:root{
 		font-size: 2.5vw;
 	}
+
 	.sidenav{
 		text-align: center;
 		padding: 0vh 0;

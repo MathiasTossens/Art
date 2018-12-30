@@ -1,7 +1,13 @@
 $(document).ready(function () {
-
-    var controller = new ScrollMagic.Controller();
-
+    
+    var controller = new ScrollMagic.Controller({
+        loglevel: 3, refreshInterval: true
+    });
+    let scrollPosi = controller.info();
+    console.log(scrollPosi) 
+    $("form.loglevel input[type=checkbox]").on("change", function (e) {
+        
+    });
     $('.trigger01').each(function () {
         var ourScene = new ScrollMagic.Scene({
             triggerElement: this,
@@ -12,7 +18,16 @@ $(document).ready(function () {
             .addTo(controller);
 
     });
+    $('.trigger02').each(function () {
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.95,
+        })
+            .TweenMax.to('.trigger02', 1, {scaleY: 0} )
+            //  .addIndicators()
+            .addTo(controller);
 
+    });
     $('.vignette').each(function () {
         var ourScene = new ScrollMagic.Scene({
             triggerElement: this,
@@ -22,10 +37,10 @@ $(document).ready(function () {
             .setClassToggle(this, 'vignetteIn')
             // .addIndicators()
             .addTo(controller);
-
     });
 
-    var scrollPos = controller.info("scrollDirection");
+
+    
     var ourScene2 = new ScrollMagic.Scene({
         triggerElement: '#trigger1',
         triggerHook: 0,
@@ -50,3 +65,4 @@ function closesidemenu() {
     document.getElementById('sidemenu').style.width = '0';
     document.getElementById('main').style.marginLeft = '0vw';
 }
+

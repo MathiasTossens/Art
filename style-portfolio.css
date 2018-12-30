@@ -11,40 +11,54 @@
 	left: 10%;	
 }
 .collumn{
-	column-count: 3;
-	column-gap: 20px; 
+	-webkit-column-count: 3;
+	        column-count: 3;
+	-webkit-column-gap: 20px;
+	        column-gap: 20px; 
+	-webkit-transition: all .1s; 
 	transition: all .1s; 
 }
 .vignette{
+	-webkit-transition: 0.2s;
 	transition: 0.2s;
 	width: 100%;
 	opacity: 0;
 	margin: 1vh 0;
+	-webkit-transition: all .5s;
 	transition: all .5s;
-	transform: translatey(20px);
-	object-fit: cover;
+	-webkit-transform: translatey(20px);
+	        transform: translatey(20px);
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .vignetteIn{
-	transform:none;
+	-webkit-transform:none;
+	        transform:none;
 	opacity: 1;
 }
 .vignette:hover{
-	transform: scale(.97);
+	-webkit-transform: scale(.97);
+	        transform: scale(.97);
 	opacity: .95;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+	        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
 	
 }
 
 @media(max-width:1069px){ 
 	.collumn{
-		column-count: 2;
-		column-gap: 20px; 
+		-webkit-column-count: 2;
+		        column-count: 2;
+		-webkit-column-gap: 20px;
+		        column-gap: 20px; 
 	}
 }
 @media(max-width:750px){
 	.collumn{
-		column-count: 1;
-		column-gap: 20px; 
+		-webkit-column-count: 1;
+		        column-count: 1;
+		-webkit-column-gap: 20px;
+		        column-gap: 20px; 
 	}
 	}
 @media(max-width:370px){	
